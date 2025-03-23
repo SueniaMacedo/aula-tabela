@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+
+        thead{
+            background-color: rgb(15, 235, 15);
+
+        }
+
+        
+        th, td {
+            border: 1px solid black
+
+        }
+
+        tfoot {
+
+            background-color: rgb(15, 235, 15);
+        }
+    </style>
+
+    
+</head>
+<body>
+ 
+    <h1> Tabela estrutura</h1>
+
+    <p> "thead" tem a função de colocar cada atributo de uma tabela em ordem, no "thead" temos as tags "tr" e "th"</p>
+     
+
+    <table>
+
+        <thead>
+            <tr> 
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Black Friday</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>fone</td>
+                <td>8</td>
+                <td>10,00$</td>
+                <td rowspan="2">Não</td>
+            </tr>
+            <tr>
+                <td>celular</td>
+                <td>15</td>
+                <td>500,00$</td>
+            
+            </tr>
+            <tr>
+                <td>carregador</td>
+                <td>20</td>
+                <td>25,00$</td>
+                <td>Não</td>
+            </tr>
+            <tr>
+                <td>capinhas</td>
+                <td>1456</td>
+                <td>5,00$</td>
+                <td>sim</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <td colspan="2">Total</td>
+            <td colspan="2">540,00$</td>
+            
+        </tfoot>
+    </table>
+</body>
+</html>
